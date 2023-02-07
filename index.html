@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework 19</title>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="/images/logoimg.png" class="logo">
+      <ul>
+        <li>ABOUT</li>
+        <li>SKILLS</li>
+        <li>WORK</li>
+        <li>CONTACT</li>
+      </ul>
+    </header>
+    <section class="heroImg">
+      <div class="content">
+        <img src="/images/Screen Shot 2023-02-05 at 2.59.33 PM.png">
+        <h1>Valeriia Makarenko</h1>
+        <p>I am a  Toronto based UX designer creating inclusive experiences through research and empathy </p>
+        <button>Download Resume</button>
+      </div>
+    </section>
+    <h1 class="heading">My UX Skills</h1>
+    <section class="flexContainer">
+      <div>
+        <img src="/images/user.png">
+        <h3>User Research</h3>
+        <p> Focusing on understanding user behaviors, needs, and motivations through observation techniques, task analysis, and other feedback methodologies.</p>
+      </div>
+      <div>
+        <img src="/images/uiui.png">
+        <h3>User Interface Design</h3>
+        <p>Innovative approach with talent for developing unique custom network</p>
+      </div>
+      <div>
+        <img src="/images/web.png">
+        <h3>Web Development</h3>
+        <p>Profficient knowledge of HTML, CSS and JavaScript. Ability to develop a website based on Figma prototypes</p>
+      </div>
+    </section>
+
+    <section class="myWork">
+      <h1 class="heading">My Work</h1>
+      <div class="workGrid">
+        <div class="img1">
+          <img src="/images/AuDefence.png">
+        </div>
+        <div class="content1">
+          <h4>AuDefence</h4>
+          <p>AuDefence is a Australian Defence website that was redesigned to better serve needs of users.</p>
+          <button>View Project</button>
+        </div>
+        <div class="img2">
+          <img src="/images/Voice.png">
+        </div>
+        <div class="content2">
+          <h4>Voice</h4>
+          <p>Voice is a non-profit platform for kids with hearing loss, it has been redesigned for users to better navigate and find needed services \</p>
+          <button>View Project</button>
+        </div>
+        <div class="img3">
+          <img src="/images/PlanO.png">
+        </div>
+        <div class="content3">
+          <h4>PlanO</h4>
+          <p>PlanO is an app that has been built for travellers that don't want to spend a fortune on their trips. PlanO has a lot of partners worldwide and can provide esclusive options for people with different budget.</p>
+          <button>View Project</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <ul>
+        <li>ABOUT</li>
+        <li>SKILLS</li>
+        <li>WORK</li>
+        <li>CONTACT</li>
+      </ul>
+    </footer>
+  </body>
+  <script src="/js/index.js">
+    $( "li" ).hover(
+  function() {
+    $( this ).append( $( "<span> ***</span>" ) );
+  }, function() {
+    $( this ).find( "span" ).last().remove();
+  }
+);
+ 
+$( "li.fade" ).hover(function() {
+  $( this ).fadeOut( 100 );
+  $( this ).fadeIn( 500 );
+});
+  </script>
+</html>
